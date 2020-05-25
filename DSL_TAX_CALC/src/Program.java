@@ -11,36 +11,54 @@ public class Program {
 
     public String taskToCalculate;
 
-    public void calcGrossSalary()
-    {
-        float finalSalary = 0;
-        if(salaryType.contains("netSalary")){
-            if(itField)
-            {
+    public void calcGrossSalary() {
+        float finalSalary;
+        if (salaryType.contains("netSalary")) {
+            if (itField) {
                 finalSalary = this.salary;
-            }
-            else
-            {
+            } else {
                 finalSalary = this.salary + this.salary * contribPensionFund / 100;
-                if(medInsEmployer > 0)
-                {
+                if (medInsEmployer > 0) {
                     finalSalary += (this.salary * medInsEmployer) / 100;
-                }
-                else if(medInsEmployee > 0)
-                {
+                } else if (medInsEmployee > 0) {
                     finalSalary += (this.salary * medInsEmployee) / 100;
                 }
 
-                if(syndicateContrib)
-                {
+                if (syndicateContrib) {
                     finalSalary += this.salary / 100;
                 }
             }
+            finalSalary += (1136.36 * 12) / 100;
             System.out.println(finalSalary);
-        }
-        else
-        {
+        } else {
             System.out.println("Introduce Net Salary");
         }
     }
+
+    public void calcNetSalary() {
+        float finalSalary = 0;
+        if (salaryType.contains("grossSalary")) {
+            if (itField) {
+                finalSalary = this.salary;
+            } else {
+                finalSalary = this.salary - this.salary * contribPensionFund / 100;
+                if (medInsEmployer > 0) {
+                    finalSalary -= (this.salary * medInsEmployer) / 100;
+                } else if (medInsEmployee > 0) {
+                    finalSalary -= (this.salary * medInsEmployee) / 100;
+                }
+
+                if (syndicateContrib) {
+                    finalSalary -= this.salary / 100;
+                }
+            }
+            System.out.println("Venit impozabil: " + finalSalary);
+            finalSalary -= (finalSalary * 12) / 100;
+            System.out.println("Salariul net: " + finalSalary);
+        } else {
+            System.out.println("Introduce Gross Salary");
+        }
+    }
 }
+
+

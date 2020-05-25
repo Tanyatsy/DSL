@@ -10,7 +10,8 @@ public class MyDSLBaseListener extends DSLBaseListener{
     }
 
     @Override
-    public void exitSf_categs(DSLParser.Sf_categsContext ctx){
+    public void exitSf_categs(DSLParser.Sf_categsContext ctx)
+    {
         program.socialFund = ctx.getText();
     }
 

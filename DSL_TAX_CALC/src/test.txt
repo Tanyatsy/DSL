@@ -3,7 +3,7 @@ name -> Xy Yx
   calcFor 1 serv{
     servN 1{
       socialFund -> privateSector
-       netSalary -> 1500 eur
+       netSalary -> 1000 eur
        contribPensionFund -> 6%
        medInsEmployer -> 4.5%
        medInsEmployee -> 4.5%
