@@ -5,8 +5,8 @@ name -> Xy Yx
       socialFund -> privateSector
        netSalary -> 1000 eur
        contribPensionFund -> 6%
-       medInsEmployer -> 4.5%
-       medInsEmployee -> 4.5%
+       medInsEmployer -> 5%
+       medInsEmployee -> 5%
        itField -> no
        syndicateContrib -> false
      }

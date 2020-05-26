@@ -17,20 +17,16 @@ public class Program {
             if (itField) {
                 finalSalary = this.salary;
             } else {
-                finalSalary = this.salary + this.salary * contribPensionFund / 100;
-                if (medInsEmployer > 0) {
-                    finalSalary += (this.salary * medInsEmployer) / 100;
-                } else if (medInsEmployee > 0) {
-                    finalSalary += (this.salary * medInsEmployee) / 100;
-                }
-
+                float IncomeTax = (100-12)/100.0f;
+                finalSalary = (this.salary/IncomeTax);
+                finalSalary = finalSalary/((100-medInsEmployee-contribPensionFund)/100.0f);
                 if (syndicateContrib) {
                     finalSalary += this.salary / 100;
-                }
             }
-            finalSalary += (1136.36 * 12) / 100;
+        }
             System.out.println(finalSalary);
-        } else {
+        }
+        else {
             System.out.println("Introduce Net Salary");
         }
     }
