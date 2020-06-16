@@ -81,11 +81,12 @@ special_cases
 
 salary
    :'netSalary'
+   |'totalSalary'
    |'grossSalary'
    ;
 
 calc_salary
-   :('calcGrossSalary'|'calcNetSalary'|'calcTaxes')+
+   :('calcGrossSalary'|'calcNetSalary'|'calcTotalSalary'|'calcTaxes')+
    ;
 
 currency
@@ -112,3 +113,4 @@ STRING
 WS
    : [ \r\n\t] -> skip
    ;
+

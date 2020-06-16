@@ -28,7 +28,9 @@ public class MyDSLBaseListener extends DSLBaseListener{
         str = str.replace("{", "");
 
         //System.out.println(str);
-        Pattern patternSalary = Pattern.compile("[0-9]+");
+        Pattern patternSalary = Pattern.compile( program.salaryType + "->[0-9]+");
+
+        Pattern patternNum = Pattern.compile("[0-9]+");
 
         Pattern patternCurrency = Pattern.compile("eur|mdl|usd");
 
@@ -49,7 +51,11 @@ public class MyDSLBaseListener extends DSLBaseListener{
 
         if(m.find())
         {
-            program.salary = Integer.parseInt(m.group(0));
+            Matcher m1 = patternNum.matcher(str);
+            if(m1.find())
+            program.salary = Integer.parseInt(m1.group(0));
+        }else {
+            System.out.println("Error: Salary field is empty.");
         }
 
         m = patternCurrency.matcher(str);

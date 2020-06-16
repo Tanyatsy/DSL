@@ -1,9 +1,9 @@
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
-import java.io.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class main {
@@ -27,7 +27,23 @@ public class main {
         Program program = new Program();
         parser.addParseListener(new MyDSLBaseListener(program));
         parser.program();
-        program.calcGrossSalary();
-        program.calcNetSalary();
+
+        switch (program.taskToCalculate)
+        {
+            case "calcTotalSalary":
+                program.calcTotalSalary();
+                break;
+            case "calcGrossSalary":
+                program.calcGrossSalary();
+            break;
+            case "calcNetSalary":
+                program.calcNetSalary();
+                break;
+            case "calcTaxes":
+                program.calcTaxes();
+                break;
+        }
+
+
     }
 }
