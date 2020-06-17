@@ -12,8 +12,7 @@ public class main {
         Scanner sc = new Scanner(file);
 
         String scriptText = "";
-        while (sc.hasNextLine())
-        {
+        while (sc.hasNextLine()) {
             scriptText += '\n' + sc.nextLine();
         }
 
@@ -23,27 +22,28 @@ public class main {
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         DSLParser parser = new DSLParser(tokens);
 
-        System.out.println("");
+        System.out.println();
         Program program = new Program();
         parser.addParseListener(new MyDSLBaseListener(program));
         parser.program();
-
-        switch (program.taskToCalculate)
-        {
-            case "calcTotalSalary":
-                program.calcTotalSalary();
-                break;
-            case "calcGrossSalary":
-                program.calcGrossSalary();
-            break;
-            case "calcNetSalary":
-                program.calcNetSalary();
-                break;
-            case "calcTaxes":
-                program.calcTaxes();
-                break;
+        if (MyDSLBaseListener.isError) {
+            System.out.println("\n");
+        } else {
+            switch (program.taskToCalculate) {
+                case "calcTotalSalary":
+                    program.calcTotalSalary();
+                    break;
+                case "calcGrossSalary":
+                    program.calcGrossSalary();
+                    break;
+                case "calcNetSalary":
+                    program.calcNetSalary();
+                    break;
+                case "calcTaxes":
+                    program.calcTaxes();
+                    break;
+            }
         }
-
 
     }
 }

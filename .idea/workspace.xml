@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e88acbf8-4c47-4c4b-aea3-4f0ea1e6f142" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/DSL.g4" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/DSL.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/MyDSLBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/MyDSLBaseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/MyDSLBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/MyDSLBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,54 +72,72 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592335851897</updated>
-      <workItem from="1592335854745" duration="6262000" />
+      <workItem from="1592335854745" duration="7865000" />
     </task>
+    <task id="LOCAL-00001" summary="Add new methods">
+      <created>1592342189309</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592342189309</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add new methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new methods" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="860" y="379" width="630" height="586" key="#xdebugger.evaluate" timestamp="1592341954238">
+    <state x="860" y="379" width="630" height="586" key="#xdebugger.evaluate" timestamp="1592372055281">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="860" y="379" width="630" height="586" key="#xdebugger.evaluate/62.0.1858.1080@62.0.1858.1080" timestamp="1592341954238" />
-    <state x="152" y="137" key="CommitChangelistDialog2" timestamp="1592342125779">
+    <state x="860" y="379" width="630" height="586" key="#xdebugger.evaluate/62.0.1858.1080@62.0.1858.1080" timestamp="1592372055281" />
+    <state x="152" y="137" key="CommitChangelistDialog2" timestamp="1592342188673">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="152" y="137" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1592342125779" />
-    <state width="883" height="295" key="GridCell.Tab.0.bottom" timestamp="1592341976221">
+    <state x="152" y="137" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1592342188673" />
+    <state width="1815" height="358" key="GridCell.Tab.0.bottom" timestamp="1592372323275">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="295" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592341976221" />
-    <state width="883" height="295" key="GridCell.Tab.0.center" timestamp="1592341976221">
+    <state width="1815" height="358" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592372323275" />
+    <state width="1815" height="358" key="GridCell.Tab.0.center" timestamp="1592372323275">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="295" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592341976221" />
-    <state width="883" height="295" key="GridCell.Tab.0.left" timestamp="1592341976221">
+    <state width="1815" height="358" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592372323275" />
+    <state width="1815" height="358" key="GridCell.Tab.0.left" timestamp="1592372323274">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="295" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592341976221" />
-    <state width="883" height="295" key="GridCell.Tab.0.right" timestamp="1592341976221">
+    <state width="1815" height="358" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592372323274" />
+    <state width="1815" height="358" key="GridCell.Tab.0.right" timestamp="1592372323275">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="295" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592341976221" />
-    <state width="883" height="363" key="GridCell.Tab.1.bottom" timestamp="1592341958442">
+    <state width="1815" height="358" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592372323275" />
+    <state width="1815" height="363" key="GridCell.Tab.1.bottom" timestamp="1592372223519">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="363" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592341958442" />
-    <state width="883" height="363" key="GridCell.Tab.1.center" timestamp="1592341958442">
+    <state width="1815" height="363" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592372223519" />
+    <state width="1815" height="363" key="GridCell.Tab.1.center" timestamp="1592372223518">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="363" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592341958442" />
-    <state width="883" height="363" key="GridCell.Tab.1.left" timestamp="1592341958442">
+    <state width="1815" height="363" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592372223518" />
+    <state width="1815" height="363" key="GridCell.Tab.1.left" timestamp="1592372223518">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="363" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592341958442" />
-    <state width="883" height="363" key="GridCell.Tab.1.right" timestamp="1592341958442">
+    <state width="1815" height="363" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592372223518" />
+    <state width="1815" height="363" key="GridCell.Tab.1.right" timestamp="1592372223518">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="363" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592341958442" />
+    <state width="1815" height="363" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592372223518" />
+    <state x="118" y="276" key="Vcs.Push.Dialog.v2" timestamp="1592342191803">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="118" y="276" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1592342191803" />
     <state x="335" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592338036390">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
@@ -127,8 +148,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/DSL_TAX_CALC/src/MyDSLBaseListener.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="18" />
+          <line>132</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
