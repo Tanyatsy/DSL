@@ -46,6 +46,8 @@ public class MyDSLBaseListener extends DSLBaseListener {
 
         Pattern patternMedInsEmployee = Pattern.compile("medInsEmployee->[0-9]*\\.?[0-9]*+%");
 
+        Pattern patternExemption = Pattern.compile("exemption[0-9]*->[0-9]*");
+
         Pattern numberPattern = Pattern.compile("\\d+");
         Matcher m = patternSalary.matcher(str);
 
@@ -118,6 +120,14 @@ public class MyDSLBaseListener extends DSLBaseListener {
         } else {
             System.out.println("Error: \"Medical Insurance Employer\" field is empty or not valid.");
             isError = true;
+        }
+
+        m = patternExemption.matcher(str);
+        if(m.find())
+        {
+            String strExempt = m.group();
+            strExempt = strExempt.substring(strExempt.indexOf('>') + 1);
+            program.exemption = Integer.parseInt(strExempt);
         }
     }
 

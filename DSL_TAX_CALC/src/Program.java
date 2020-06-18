@@ -13,6 +13,7 @@ public class Program {
     public String taskToCalculate;
     public float finalSalary = 0;
     public float incomeTax = (100 - 12) / 100.0f;
+    public int exemption = 0;
     float totalSalary = 0;
     float calcTaxes = 0;
 
@@ -50,6 +51,9 @@ public class Program {
                 }
             }
             System.out.println("Venit impozabil: " + finalSalary);
+            if(exemption > 0 ){
+                finalSalary -= exemption;
+            }
             finalSalary -= (finalSalary * 12) / 100;
             System.out.println("Salariul net: " + finalSalary);
         } else {

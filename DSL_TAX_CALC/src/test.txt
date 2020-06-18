@@ -5,7 +5,7 @@ name -> Xy Yx
       socialFund -> budgetaryInstitutions
        grossSalary -> 1000 eur
        contribPensionFund -> 6%
-       medInsEmployer -> 5.5%
+       medInsEmployer -> 5%
        medInsEmployee -> 5%
        itField -> no
        syndicateContrib -> false
