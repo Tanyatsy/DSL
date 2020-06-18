@@ -62,7 +62,15 @@ public class Program {
         if (salaryType.contains("netSalary")) {
             totalSalary = this.salary;
             calcGrossSalary();
-            totalSalary += Float.parseFloat(f.format(finalSalary * 18 / 100));
+            if(socialFund.equals("privateSector") || socialFund.equals("higherEducation") || socialFund.equals("medicalInstitutions")) {
+                totalSalary += Float.parseFloat(f.format(finalSalary * 18 / 100));
+            }else if(socialFund.equals("budgetaryInstitutions") || socialFund.equals("publicInstitutions")){
+                totalSalary += Float.parseFloat(f.format(finalSalary * 23 / 100));
+            }else if(socialFund.equals("privateSectorS") || socialFund.equals("higherEducationS") || socialFund.equals("medicalInstitutionsS")){
+                totalSalary += Float.parseFloat(f.format(finalSalary * 26 / 100));
+            }else if(socialFund.equals("budgetaryInstitutionsS") || socialFund.equals("publicInstitutionsS")){
+                totalSalary += Float.parseFloat(f.format(finalSalary * 33 / 100));
+            }
             totalSalary += Float.parseFloat(f.format(finalSalary * 10 / 100));
             totalSalary += Float.parseFloat(f.format(finalSalary * contribPensionFund / 100));
             totalSalary += Float.parseFloat(f.format(this.salary / incomeTax)) - this.salary;

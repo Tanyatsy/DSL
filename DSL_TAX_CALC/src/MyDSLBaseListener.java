@@ -40,11 +40,11 @@ public class MyDSLBaseListener extends DSLBaseListener {
         Pattern patternSyndicateTrue = Pattern.compile("syndicateContrib->yes|syndicateContrib->true");
         Pattern patternSyndicateFalse = Pattern.compile("syndicateContrib->no|syndicateContrib->false");
 
-        Pattern patternContribFund = Pattern.compile("contribPensionFund->[0-9]+%");
+        Pattern patternContribFund = Pattern.compile("contribPensionFund->[0-9]*\\.?[0-9]*+%");
 
-        Pattern patternMedInsEmployer = Pattern.compile("medInsEmployer->[0-9]+%");
+        Pattern patternMedInsEmployer = Pattern.compile("medInsEmployer->[0-9]*\\.?[0-9]*+%");
 
-        Pattern patternMedInsEmployee = Pattern.compile("medInsEmployee->[0-9]+%");
+        Pattern patternMedInsEmployee = Pattern.compile("medInsEmployee->[0-9]*\\.?[0-9]*+%");
 
         Pattern numberPattern = Pattern.compile("\\d+");
         Matcher m = patternSalary.matcher(str);

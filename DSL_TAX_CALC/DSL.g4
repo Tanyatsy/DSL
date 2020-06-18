@@ -41,7 +41,8 @@ string
    ;
 
 number
-   : NUMBER
+   : INT
+   | FLOAT
    ;
 
 first_category
@@ -81,7 +82,6 @@ special_cases
 
 salary
    :'netSalary'
-   |'totalSalary'
    |'grossSalary'
    ;
 
@@ -102,8 +102,13 @@ booln
   |'false'
   ;
 
-NUMBER
+INT
    : [0-9] +
+   ;
+
+
+FLOAT
+   :INT'.'INT
    ;
 
 STRING

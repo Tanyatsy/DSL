@@ -2,14 +2,15 @@ begin
 name -> Xy Yx
   calcFor 1 serv{
     servN 1{
-      socialFund -> privateSector
+      socialFund -> budgetaryInstitutions
        grossSalary -> 1000 eur
        contribPensionFund -> 6%
-       medInsEmployer -> 5%
+       medInsEmployer -> 5.5%
        medInsEmployee -> 5%
        itField -> no
        syndicateContrib -> false
+       exemption 1 -> 50 eur
      }
     }
-  calcTaxes
+  calcNetSalary
  end

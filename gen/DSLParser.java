@@ -21,7 +21,7 @@ public class DSLParser extends Parser {
 		T__17=18, T__18=19, T__19=20, T__20=21, T__21=22, T__22=23, T__23=24, 
 		T__24=25, T__25=26, T__26=27, T__27=28, T__28=29, T__29=30, T__30=31, 
 		T__31=32, T__32=33, T__33=34, T__34=35, T__35=36, T__36=37, T__37=38, 
-		T__38=39, T__39=40, T__40=41, NUMBER=42, STRING=43, WS=44;
+		T__38=39, T__39=40, INT=41, FLOAT=42, STRING=43, WS=44;
 	public static final int
 		RULE_program = 0, RULE_main_block = 1, RULE_calc_block = 2, RULE_serv_block = 3, 
 		RULE_serv_stmts = 4, RULE_details_block = 5, RULE_details_stmts = 6, RULE_sf_categs = 7, 
@@ -47,9 +47,9 @@ public class DSLParser extends Parser {
 			"'publicInstitutions'", "'privateSectorS'", "'higherEducationS'", "'medicalInstitutionsS'", 
 			"'budgetaryInstitutionsS'", "'publicInstitutionsS'", "'contribPensionFund'", 
 			"'medInsEmployer'", "'medInsEmployee'", "'itField'", "'syndicateContrib'", 
-			"'netSalary'", "'grossSalary'", "'totalSalary'", "'calcGrossSalary'", 
-			"'calcNetSalary'", "'calcTotalSalary'", "'calcTaxes'", "'mdl'", "'eur'", 
-			"'usd'", "'yes'", "'true'", "'no'", "'false'"
+			"'netSalary'", "'grossSalary'", "'calcGrossSalary'", "'calcNetSalary'", 
+			"'calcTotalSalary'", "'calcTaxes'", "'mdl'", "'eur'", "'usd'", "'yes'", 
+			"'true'", "'no'", "'false'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
@@ -58,7 +58,7 @@ public class DSLParser extends Parser {
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
 			null, null, null, null, null, null, null, null, null, null, null, null, 
-			null, null, null, null, null, null, "NUMBER", "STRING", "WS"
+			null, null, null, null, null, "INT", "FLOAT", "STRING", "WS"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -588,7 +588,7 @@ public class DSLParser extends Parser {
 				setState(107);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-				while (_la==NUMBER) {
+				while (_la==INT || _la==FLOAT) {
 					{
 					{
 					setState(104);
@@ -755,7 +755,8 @@ public class DSLParser extends Parser {
 	}
 
 	public static class NumberContext extends ParserRuleContext {
-		public TerminalNode NUMBER() { return getToken(DSLParser.NUMBER, 0); }
+		public TerminalNode INT() { return getToken(DSLParser.INT, 0); }
+		public TerminalNode FLOAT() { return getToken(DSLParser.FLOAT, 0); }
 		public NumberContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -778,11 +779,20 @@ public class DSLParser extends Parser {
 	public final NumberContext number() throws RecognitionException {
 		NumberContext _localctx = new NumberContext(_ctx, getState());
 		enterRule(_localctx, 18, RULE_number);
+		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(127);
-			match(NUMBER);
+			_la = _input.LA(1);
+			if ( !(_la==INT || _la==FLOAT) ) {
+			_errHandler.recoverInline(this);
+			}
+			else {
+				if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+				_errHandler.reportMatch(this);
+				consume();
+			}
 			}
 		}
 		catch (RecognitionException re) {
@@ -1125,7 +1135,7 @@ public class DSLParser extends Parser {
 			{
 			setState(141);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__27) | (1L << T__28) | (1L << T__29))) != 0)) ) {
+			if ( !(_la==T__27 || _la==T__28) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1181,7 +1191,7 @@ public class DSLParser extends Parser {
 				{
 				setState(143);
 				_la = _input.LA(1);
-				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__30) | (1L << T__31) | (1L << T__32) | (1L << T__33))) != 0)) ) {
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__29) | (1L << T__30) | (1L << T__31) | (1L << T__32))) != 0)) ) {
 				_errHandler.recoverInline(this);
 				}
 				else {
@@ -1194,7 +1204,7 @@ public class DSLParser extends Parser {
 				setState(146); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__30) | (1L << T__31) | (1L << T__32) | (1L << T__33))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__29) | (1L << T__30) | (1L << T__31) | (1L << T__32))) != 0) );
 			}
 		}
 		catch (RecognitionException re) {
@@ -1237,7 +1247,7 @@ public class DSLParser extends Parser {
 			{
 			setState(148);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__34) | (1L << T__35) | (1L << T__36))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__33) | (1L << T__34) | (1L << T__35))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1287,7 +1297,7 @@ public class DSLParser extends Parser {
 			{
 			setState(150);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__37) | (1L << T__38) | (1L << T__39) | (1L << T__40))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__36) | (1L << T__37) | (1L << T__38) | (1L << T__39))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1320,16 +1330,16 @@ public class DSLParser extends Parser {
 		"\bu\n\b\f\b\16\bx\13\b\3\t\3\t\3\t\3\t\5\t~\n\t\3\n\3\n\3\13\3\13\3\f"+
 		"\3\f\3\r\3\r\3\16\3\16\3\17\3\17\3\20\3\20\3\21\3\21\3\22\3\22\3\23\6"+
 		"\23\u0093\n\23\r\23\16\23\u0094\3\24\3\24\3\25\3\25\3\25\2\2\26\2\4\6"+
-		"\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(\2\f\3\2\17\21\3\2\22\23\3\2\24"+
-		"\26\3\2\27\30\3\2\31\33\3\2\34\35\3\2\36 \3\2!$\3\2%\'\3\2(+\2\u0090\2"+
-		"+\3\2\2\2\4/\3\2\2\2\6\63\3\2\2\2\b;\3\2\2\2\n?\3\2\2\2\fI\3\2\2\2\16"+
-		"M\3\2\2\2\20}\3\2\2\2\22\177\3\2\2\2\24\u0081\3\2\2\2\26\u0083\3\2\2\2"+
-		"\30\u0085\3\2\2\2\32\u0087\3\2\2\2\34\u0089\3\2\2\2\36\u008b\3\2\2\2 "+
-		"\u008d\3\2\2\2\"\u008f\3\2\2\2$\u0092\3\2\2\2&\u0096\3\2\2\2(\u0098\3"+
-		"\2\2\2*,\5\4\3\2+*\3\2\2\2,-\3\2\2\2-+\3\2\2\2-.\3\2\2\2.\3\3\2\2\2/\60"+
-		"\7\3\2\2\60\61\5\6\4\2\61\62\7\4\2\2\62\5\3\2\2\2\63\64\7\5\2\2\64\65"+
-		"\7\6\2\2\65\66\5\22\n\2\66\67\5\22\n\2\678\5\n\6\289\5\b\5\29:\5$\23\2"+
-		":\7\3\2\2\2;<\7\7\2\2<=\5\f\7\2=>\7\b\2\2>\t\3\2\2\2?@\7\t\2\2@A\5\24"+
+		"\b\n\f\16\20\22\24\26\30\32\34\36 \"$&(\2\r\3\2+,\3\2\17\21\3\2\22\23"+
+		"\3\2\24\26\3\2\27\30\3\2\31\33\3\2\34\35\3\2\36\37\3\2 #\3\2$&\3\2\'*"+
+		"\2\u0090\2+\3\2\2\2\4/\3\2\2\2\6\63\3\2\2\2\b;\3\2\2\2\n?\3\2\2\2\fI\3"+
+		"\2\2\2\16M\3\2\2\2\20}\3\2\2\2\22\177\3\2\2\2\24\u0081\3\2\2\2\26\u0083"+
+		"\3\2\2\2\30\u0085\3\2\2\2\32\u0087\3\2\2\2\34\u0089\3\2\2\2\36\u008b\3"+
+		"\2\2\2 \u008d\3\2\2\2\"\u008f\3\2\2\2$\u0092\3\2\2\2&\u0096\3\2\2\2(\u0098"+
+		"\3\2\2\2*,\5\4\3\2+*\3\2\2\2,-\3\2\2\2-+\3\2\2\2-.\3\2\2\2.\3\3\2\2\2"+
+		"/\60\7\3\2\2\60\61\5\6\4\2\61\62\7\4\2\2\62\5\3\2\2\2\63\64\7\5\2\2\64"+
+		"\65\7\6\2\2\65\66\5\22\n\2\66\67\5\22\n\2\678\5\n\6\289\5\b\5\29:\5$\23"+
+		"\2:\7\3\2\2\2;<\7\7\2\2<=\5\f\7\2=>\7\b\2\2>\t\3\2\2\2?@\7\t\2\2@A\5\24"+
 		"\13\2AB\7\n\2\2B\13\3\2\2\2CD\7\13\2\2DE\5\24\13\2EF\7\7\2\2FG\5\16\b"+
 		"\2GH\7\b\2\2HJ\3\2\2\2IC\3\2\2\2JK\3\2\2\2KI\3\2\2\2KL\3\2\2\2L\r\3\2"+
 		"\2\2MN\7\f\2\2NO\7\6\2\2OP\5\20\t\2PQ\3\2\2\2QR\5\"\22\2RS\7\6\2\2ST\5"+
@@ -1341,13 +1351,13 @@ public class DSLParser extends Parser {
 		"rs\5&\24\2su\3\2\2\2ti\3\2\2\2ux\3\2\2\2vt\3\2\2\2vw\3\2\2\2w\17\3\2\2"+
 		"\2xv\3\2\2\2y~\5\26\f\2z~\5\30\r\2{~\5\32\16\2|~\5\34\17\2}y\3\2\2\2}"+
 		"z\3\2\2\2}{\3\2\2\2}|\3\2\2\2~\21\3\2\2\2\177\u0080\7-\2\2\u0080\23\3"+
-		"\2\2\2\u0081\u0082\7,\2\2\u0082\25\3\2\2\2\u0083\u0084\t\2\2\2\u0084\27"+
-		"\3\2\2\2\u0085\u0086\t\3\2\2\u0086\31\3\2\2\2\u0087\u0088\t\4\2\2\u0088"+
-		"\33\3\2\2\2\u0089\u008a\t\5\2\2\u008a\35\3\2\2\2\u008b\u008c\t\6\2\2\u008c"+
-		"\37\3\2\2\2\u008d\u008e\t\7\2\2\u008e!\3\2\2\2\u008f\u0090\t\b\2\2\u0090"+
-		"#\3\2\2\2\u0091\u0093\t\t\2\2\u0092\u0091\3\2\2\2\u0093\u0094\3\2\2\2"+
+		"\2\2\2\u0081\u0082\t\2\2\2\u0082\25\3\2\2\2\u0083\u0084\t\3\2\2\u0084"+
+		"\27\3\2\2\2\u0085\u0086\t\4\2\2\u0086\31\3\2\2\2\u0087\u0088\t\5\2\2\u0088"+
+		"\33\3\2\2\2\u0089\u008a\t\6\2\2\u008a\35\3\2\2\2\u008b\u008c\t\7\2\2\u008c"+
+		"\37\3\2\2\2\u008d\u008e\t\b\2\2\u008e!\3\2\2\2\u008f\u0090\t\t\2\2\u0090"+
+		"#\3\2\2\2\u0091\u0093\t\n\2\2\u0092\u0091\3\2\2\2\u0093\u0094\3\2\2\2"+
 		"\u0094\u0092\3\2\2\2\u0094\u0095\3\2\2\2\u0095%\3\2\2\2\u0096\u0097\t"+
-		"\n\2\2\u0097\'\3\2\2\2\u0098\u0099\t\13\2\2\u0099)\3\2\2\2\n-K]fmv}\u0094";
+		"\13\2\2\u0097\'\3\2\2\2\u0098\u0099\t\f\2\2\u0099)\3\2\2\2\n-K]fmv}\u0094";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
