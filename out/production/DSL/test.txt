@@ -9,8 +9,7 @@ name -> Xy Yx
        medInsEmployee -> 5%
        itField -> no
        syndicateContrib -> false
-       exemption 1 -> 50 eur
      }
     }
-  calcNetSalary
+  calcTotalSalary
  end

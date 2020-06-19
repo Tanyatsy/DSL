@@ -2,30 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e88acbf8-4c47-4c4b-aea3-4f0ea1e6f142" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/MyDSLBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/MyDSLBaseListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DSL_TAX_CALC/src/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSL_TAX_CALC/src/test.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSL.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSL.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSL.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSL.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLLexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLLexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$BoolnContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$BoolnContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Calc_salaryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Calc_salaryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$CurrencyContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$CurrencyContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$First_categoryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$First_categoryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Fourth_categoryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Fourth_categoryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$NumberContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$NumberContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Optional_taxesContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Optional_taxesContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$SalaryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$SalaryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Second_categoryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Second_categoryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Special_casesContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Special_casesContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$StringContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$StringContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Third_categoryContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Third_categoryContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DSL/MyDSLBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/MyDSLBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Calc_blockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Calc_blockContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Details_blockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Details_blockContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Details_stmtsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Details_stmtsContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Main_blockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Main_blockContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$ProgramContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Serv_blockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Serv_blockContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Serv_stmtsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Serv_stmtsContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/DSLParser$Sf_categsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/DSLParser$Sf_categsContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSL/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DSL/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DSL/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DSL/test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -90,7 +82,8 @@
       <option name="presentableId" value="Default" />
       <updated>1592335851897</updated>
       <workItem from="1592335854745" duration="8969000" />
-      <workItem from="1592504205936" duration="4752000" />
+      <workItem from="1592504205936" duration="5039000" />
+      <workItem from="1592547635269" duration="1326000" />
     </task>
     <task id="LOCAL-00001" summary="Add new methods">
       <created>1592342189309</created>
@@ -113,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592508932306</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add some functions">
+      <created>1592512397481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592512397481</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,68 +131,77 @@
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="860" y="379" width="630" height="586" key="#xdebugger.evaluate/62.0.1858.1080@62.0.1858.1080" timestamp="1592511860564" />
-    <state x="152" y="137" key="CommitChangelistDialog2" timestamp="1592508931427">
+    <state x="152" y="137" key="CommitChangelistDialog2" timestamp="1592512396464">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="152" y="137" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1592508931427" />
-    <state width="883" height="401" key="GridCell.Tab.0.bottom" timestamp="1592512318869">
+    <state x="152" y="137" key="CommitChangelistDialog2/62.0.1858.1080@62.0.1858.1080" timestamp="1592512396464" />
+    <state width="883" height="362" key="GridCell.Tab.0.bottom" timestamp="1592549092309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="401" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592512318869" />
-    <state width="883" height="401" key="GridCell.Tab.0.center" timestamp="1592512318869">
+    <state width="883" height="362" key="GridCell.Tab.0.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092309" />
+    <state width="883" height="362" key="GridCell.Tab.0.center" timestamp="1592549092308">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="401" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592512318869" />
-    <state width="883" height="401" key="GridCell.Tab.0.left" timestamp="1592512318868">
+    <state width="883" height="362" key="GridCell.Tab.0.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092308" />
+    <state width="883" height="362" key="GridCell.Tab.0.left" timestamp="1592549092308">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="401" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592512318868" />
-    <state width="883" height="401" key="GridCell.Tab.0.right" timestamp="1592512318869">
+    <state width="883" height="362" key="GridCell.Tab.0.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092308" />
+    <state width="883" height="362" key="GridCell.Tab.0.right" timestamp="1592549092309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="401" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592512318869" />
-    <state width="883" height="362" key="GridCell.Tab.1.bottom" timestamp="1592512247930">
+    <state width="883" height="362" key="GridCell.Tab.0.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092309" />
+    <state width="883" height="362" key="GridCell.Tab.1.bottom" timestamp="1592549092309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="362" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592512247930" />
-    <state width="883" height="362" key="GridCell.Tab.1.center" timestamp="1592512247930">
+    <state width="883" height="362" key="GridCell.Tab.1.bottom/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092309" />
+    <state width="883" height="362" key="GridCell.Tab.1.center" timestamp="1592549092309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="362" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592512247930" />
-    <state width="883" height="362" key="GridCell.Tab.1.left" timestamp="1592512247930">
+    <state width="883" height="362" key="GridCell.Tab.1.center/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092309" />
+    <state width="883" height="362" key="GridCell.Tab.1.left" timestamp="1592549092309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="362" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592512247930" />
-    <state width="883" height="362" key="GridCell.Tab.1.right" timestamp="1592512247930">
+    <state width="883" height="362" key="GridCell.Tab.1.left/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092309" />
+    <state width="883" height="362" key="GridCell.Tab.1.right" timestamp="1592549092309">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state width="883" height="362" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592512247930" />
-    <state x="118" y="276" key="Vcs.Push.Dialog.v2" timestamp="1592508935980">
+    <state width="883" height="362" key="GridCell.Tab.1.right/62.0.1858.1080@62.0.1858.1080" timestamp="1592549092309" />
+    <state x="118" y="276" key="Vcs.Push.Dialog.v2" timestamp="1592512400949">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="118" y="276" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1592508935980" />
+    <state x="118" y="276" key="Vcs.Push.Dialog.v2/62.0.1858.1080@62.0.1858.1080" timestamp="1592512400949" />
     <state width="471" height="543" key="XDebugger.FullValuePopup" timestamp="1592511523789">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state width="471" height="543" key="XDebugger.FullValuePopup/62.0.1858.1080@62.0.1858.1080" timestamp="1592511523789" />
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1592504225240">
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1592547662743">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
-    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1592504225240" />
+    <state x="687" y="363" key="com.intellij.ide.util.TipDialog/62.0.1858.1080@62.0.1858.1080" timestamp="1592547662743" />
     <state x="335" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592338036390">
       <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="335" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/62.0.1858.1080@62.0.1858.1080" timestamp="1592338036390" />
+    <state x="263" y="319" key="extract.method.dialog" timestamp="1592548020566">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="263" y="319" key="extract.method.dialog/62.0.1858.1080@62.0.1858.1080" timestamp="1592548020566" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/DSL_TAX_CALC/src/MyDSLBaseListener.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/DSL_TAX_CALC/src/main.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="program.taskToCalculate" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

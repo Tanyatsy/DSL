@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) throws IOException {
-        File file = new File("DSL_TAX_CALC/src/test.txt");
+        File file = new File("DSL_TAX_CALC/src/1.txt");
         Scanner sc = new Scanner(file);
 
         String scriptText = "";
@@ -40,6 +40,10 @@ public class main {
                     program.calcNetSalary();
                     break;
                 case "calcTaxes":
+                    program.calcTaxes();
+                    break;
+                case "calcTotalSalarycalcTaxes":
+                    program.calcTotalSalary();
                     program.calcTaxes();
                     break;
             }
